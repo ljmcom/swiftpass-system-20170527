@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Swiftpass</title>
+    <link rel="stylesheet" href="../style/reset.css"/>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/honeySwitch.js"></script>
+</head>
+<body>
+<div class="swiftpass">
+    <!--公共pc端顶部-->
+    <div class="sp-header">
+        <div class="w">
+            <div class="sp-logo fl">
+                <img src="../image/logo_ch.png" alt=""/>
+            </div>
+            <div class="sp-account fr">您好：
+                <a>ALL_CITI0C_HEAD_941697</a>
+            </div>
+            <!--修改密码弹出框-->
+            <div class="sp-password">
+                <div class="arrow-up"></div>
+                <div class="arrow-block"></div>
+                <p><a href="javascript:;">修改密码</a></p>
+                <p><a href="javascript:;">注销退出</a></p>
+            </div>
+        </div>
+    </div>
+    <!--主体内容-->
+    <div class="sp-container w clearfix">
+        <!--PC端左边选项-->
+        <div class="container-left fl">
+            <nav class="navbar">
+                <div class="navbar-total">
+                        <span class="caret">
+                            <img src="../imgs/navbar-001.png" alt=""/>
+                        </span>
+                    <a href="#" class="dropdown-toggle">代理商管理</a>
+                </div>
+                <ul>
+                    <li class="active"><a href="javascript:;">新增代理商</a></li>
+                    <li><a href="javascript:;">代理商管理</a></li>
+                </ul>
+                <div class="navbar-total">
+                        <span class="caret">
+                            <img src="../imgs/navbar-002.png" alt=""/>
+                        </span>
+                    <a href="#" class="dropdown-toggle">商户管理</a>
+                </div>
+                <ul>
+
+                    <li><a href="javascript:;">商户管理</a></li>
+                    <li><a href="javascript:;">收银员管理</a></li>
+                    <li><a href="javascript:;">开户待审</a></li>
+                    <li><a href="javascript:;">二维码批量导出</a></li>
+                </ul>
+                <div class="navbar-total">
+                        <span class="caret">
+                            <img src="../imgs/navbar-003.png" alt=""/>
+                        </span>
+                    <a href="#" class="dropdown-toggle">交易管理</a>
+                </div>
+                <ul>
+                    <li><a href="javascript:;">代理交易情况</a></li>
+                    <li><a href="javascript:;">订单流水查询</a></li>
+                </ul>
+                <div class="navbar-total">
+                        <span class="caret">
+                            <img src="../imgs/navbar-004.png" alt=""/>
+                        </span>
+                    <a href="#" class="dropdown-toggle">结算分成</a>
+                </div>
+                <ul>
+                    <li><a href="javascript:;">代理结算分成</a></li>
+                    <li><a href="javascript:;">交易分润</a></li>
+                </ul>
+                <div class="navbar-total">
+                        <span class="caret">
+                            <img src="../imgs/navbar-005.png" alt=""/>
+                        </span>
+                    <a href="javascript:;" class="dropdown-toggle">营销管理</a>
+                </div>
+                <ul>
+                    <li><a href="javascript:;">支付广告</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--1、新增代理商页面-->
+        <div class="container-right selected fl">
+            <p class="container-title">新增代理商</p>
+            <!--新增代理商表格-->
+            <div class="agent-infor clearfix m-agent-infor">
+                <div class="agent-title">
+                    <ul>
+                        <li>
+                            <a class="agent-add" href="javascript:;">
+                                新增
+                                <img src="../image/new-add.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="agent-delete" href="javascript:;">
+                                编辑
+                                <img src="../image/edit.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="agent-edit" href="javascript:;">
+                                详情
+                                <img src="../imgs/details-20170522.png" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="agent-content clearfix">
+                    <li>商户名称</li>
+                    <li>商户编号</li>
+                    <li>商户类型</li>
+                    <li>所属渠道</li>
+                    <li>操作</li>
+                </ul>
+                <ul class="agent-bottom clearfix">
+                    <li>佛山市泰芒了</li>
+                    <li>13544448888</li>
+                    <li>普通商户</li>
+                    <li>佛山市米又米信息科技有限公司</li>
+                    <li>
+                        <a class="pay-ad-delete" href="javascript:;">删除</a>
+                    </li>
+                </ul>
+                <ul class="agent-bottom clearfix">
+                    <li>佛山市泰芒了</li>
+                    <li>13544448888</li>
+                    <li>普通商户</li>
+                    <li>佛山市很大很健康不少国家接发的说法是考虑到附近</li>
+                    <li>
+                        <a class="pay-ad-delete" href="javascript:;">删除</a>
+                    </li>
+                </ul>
+                <ul class="agent-bottom clearfix">
+                    <li>佛山市泰芒了</li>
+                    <li>13544448888</li>
+                    <li>普通商户</li>
+                    <li>佛山市很大很健康不少国家接发的说法是考虑到附近</li>
+                    <li>
+                        <a class="pay-ad-delete" href="javascript:;">删除</a>
+                    </li>
+                </ul>
+            </div>
+            <!--上下页面按钮-->
+            <div class="page">
+                <div class="page-button">
+                    <a href="javasript:;"><img src="../imgs/button-left.png" alt=""/></a>
+                    <a href="javasript:;"><img src="../imgs/button-right.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+        <!--2、代理商管理-->
+        <div class="container-right fl">
+            <p class="container-title">代理商管理</p>
+            <!--代理商管理表格-->
+            <div class="agent-manage-infor clearfix m-agent-manage-infor">
+                <div class="agent-manage-title">
+                    <ul>
+                        <li>
+                            <a class="agent-manage-add" href="javascript:;">
+                                新增
+                                <img src="../image/new-add.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="agent-manage-delete" href="javascript:;">
+                                编辑
+                                <img src="../image/edit.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="agent-manage-edit" href="javascript:;">
+                                删除
+                                <img src="../image/delete-2.png" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="agent-manage-content clearfix">
+                    <li><input type="checkbox" name="" id="checkAll"/></li>
+                    <li class="list-first">序列</li>
+                    <li>姓名</li>
+                    <li>手机号码</li>
+                    <li>账单</li>
+                    <li>报表</li>
+                    <li>退款</li>
+                </ul>
+                <ul class="agent-manage-bottom clearfix">
+                    <li><input type="checkbox" name="check"/></li>
+                    <li>1</li>
+                    <li>张大大</li>
+                    <li>13544448888</li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="agent-manage-bottom clearfix">
+                    <li><input type="checkbox" name="check"/></li>
+                    <li>1</li>
+                    <li>张大大</li>
+                    <li>13544448888</li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--上下页面按钮-->
+            <div class="page">
+                <div class="page-button">
+                    <a href="javasript:;"><img src="../imgs/button-left.png" alt=""/></a>
+                    <a href="javasript:;"><img src="../imgs/button-right.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+        <!--3、商户管理-->
+        <div class="container-right fl">
+            <p class="container-title">商户管理</p>
+            <!--收银员管理表格-->
+            <div class="agent-infor clearfix m-agent-infor">
+                <div class="agent-title">
+                    <ul>
+                        <li>
+                            <a class="agent-add" href="javascript:;">
+                                新增
+                                <img src="../image/new-add.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="agent-delete" href="javascript:;">
+                                编辑
+                                <img src="../image/edit.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="agent-edit" href="javascript:;">
+                                详情
+                                <img src="../imgs/details-20170522.png" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="agent-content clearfix">
+                    <li>商户名称</li>
+                    <li>商户编号</li>
+                    <li>商户类型</li>
+                    <li>所属渠道</li>
+                    <li>操作</li>
+                </ul>
+                <ul class="agent-bottom clearfix">
+                    <li>佛山市泰芒了</li>
+                    <li>13544448888</li>
+                    <li>普通商户</li>
+                    <li>佛山市米又米信息科技有限公司</li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="agent-bottom clearfix">
+                    <li>佛山市泰芒了</li>
+                    <li>13544448888</li>
+                    <li>普通商户</li>
+                    <li>佛山市米又米信息科技有限公司</li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="agent-bottom clearfix">
+                    <li>佛山市泰芒了</li>
+                    <li>13544448888</li>
+                    <li>普通商户</li>
+                    <li>佛山市米又米信息科技有限公司</li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--上下页面按钮-->
+            <div class="page">
+                <div class="page-button">
+                    <a href="javasript:;"><img src="../imgs/button-left.png" alt=""/></a>
+                    <a href="javasript:;"><img src="../imgs/button-right.png" alt=""/></a>
+                </div>
+            </div>
+            <!--商户管理新增的弹出表单-->
+            <div class="basic-data">
+                <form action="#">
+                    <!--基础资料-->
+                    <div class="basic-data-top">
+                        <span>基础资料</span>
+                        <a class="basic-data-close" href="javascript:;">
+                            <img src="../imgs/audit-close.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="clearfix">
+                        <div class="ad-content fl">
+                            <p>
+                                <span>商户名称：</span>
+                                <input type="text" placeholder="请输入活动名称"/>
+                            </p>
+                            <p>
+                                <span>币种：</span>
+                                <select name="type">
+                                    <option value="">选择币种</option>
+                                    <option value="">人民币</option>
+                                    <option value="">美元</option>
+                                    <option value="">欧元</option>
+                                </select>
+                            </p>
+                            <p>
+                                <span>备注：</span>
+                                <input type="text" />
+                            </p>
+                            <p class="marketing-type">
+                                <span>商户详情：</span>
+                                <input type="text" />
+                            </p>
+                            <p>
+                                <span>商户简介：</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span>省份：</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span>地址：</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span>邮箱：</span>
+                                <input type="email" name="email" pattern="/^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/"/>
+                            </p>
+                            <p>
+                                <span>客服电话：</span>
+                                <input type="tel" name="tel"/>
+                            </p>
+                            <p>
+                                <span>负责人手机：</span>
+                                <input type="tel" name="tel"/>
+                            </p>
+                        </div>
+                        <div class="ad-content fr">
+                            <p>
+                                <span>外商户号：</span>
+                                <input type="text" placeholder="请输入外商户号"/>
+                            </p>
+                            <p>
+                                <span>商户经营类型：</span>
+                                <input type="text" placeholder="请输入商户经营类型"/>
+                            </p>
+                            <p class="marketing-type">
+                                <span>渠道授权交易：</span>
+                                <select name="type" id="">
+                                    <option value="">选择活动类型</option>
+                                    <option value="">优惠活动一</option>
+                                    <option value="">优惠活动二</option>
+                                    <option value="">优惠活动三</option>
+                                </select>
+                            </p>
+                            <p>
+                                <span>银行账户：</span>
+                                <input type="text" placeholder="请输入银行账户"/>
+                            </p>
+                            <p>
+                                <span>行业类别：</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span>城市：</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span>电话：</span>
+                                <input type="tel" name="tel"/>
+                            </p>
+                            <p>
+                                <span>企业法人：</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span>负责人：</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span>负责人身份证：</span>
+                                <input type="text"/>
+                            </p>
+                        </div>
+                    </div>
+                    <!--证件上传-->
+                    <p class="basic-data-title mg-top">
+                        <span>证件上传</span>
+                    </p>
+                    <div class="voucher">
+                        <div class="voucher-info">
+                            <img id="voucher-pic"/>
+                            <div class="voucher-btn">
+                                上传
+                                <input type="file" name="file" multiple onchange="imgPreview(this)" class="upload"/>
+                            </div>
+                            <p>身份证图片</p>
+                        </div>
+                        <div class="voucher-info">
+                            <img id="voucher-pic"/>
+                            <div class="voucher-btn">
+                                上传
+                                <input type="file" name="file" multiple onchange="imgPreview(this)" class="upload"/>
+                            </div>
+                            <p>身份证图片</p>
+                        </div>
+                        <div class="voucher-info">
+                            <img id="voucher-pic"/>
+                            <div class="voucher-btn">
+                                上传
+                                <input type="file" name="file" multiple onchange="imgPreview(this)" class="upload"/>
+                            </div>
+                            <p>身份证图片</p>
+                        </div>
+                        <div class="voucher-info">
+                            <img id="voucher-pic"/>
+                            <div class="voucher-btn">
+                                上传
+                                <input type="file" name="file" multiple onchange="imgPreview(this)" class="upload"/>
+                            </div>
+                            <p>身份证图片</p>
+                        </div>
+                        <div class="voucher-info">
+                            <img id="voucher-pic"/>
+                            <div class="voucher-btn">
+                                上传
+                                <input type="file" name="file" multiple onchange="imgPreview(this)" class="upload"/>
+                            </div>
+                            <p>身份证图片</p>
+                        </div>
+                    </div>
+                    <!--银行账户信息-->
+                    <p class="basic-data-title">
+                        <span>银行账户信息</span>
+                    </p>
+                    <div class="bank-info">
+                        <div class="ad-content fl">
+                            <p>
+                                <span>银行卡号：</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span>开户人：</span>
+                                <input type="text" />
+                            </p>
+                            <p class="marketing-type">
+                                <span>联行号：</span>
+                                <input type="text" />
+                            </p>
+                            <p>
+                                <span>开户支行所在省：</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span>持卡人证件类型：</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span>持卡人地址：</span>
+                                <input type="text"/>
+                            </p>
+                        </div>
+                        <div class="ad-content fr">
+                            <p>
+                                <span>开户银行：</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span>账户类型：</span>
+                                <input type="text" placeholder="请输入商户经营类型"/>
+                            </p>
+                            <p>
+                                <span>开户支行名称：</span>
+                                <input type="text" placeholder="请输入银行账户"/>
+                            </p>
+                            <p>
+                                <span>开户支行所在市：</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span>持卡人证件号码：</span>
+                                <input type="text"/>
+                            </p>
+                            <p>
+                                <span>手机号码：</span>
+                                <input type="tel" name="tel"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="basic-btn">
+                        <input type="submit" value="确认添加" class="basic-add-btn"/>
+                        <a class="basic-cancel-btn" href="javascript:;">取消</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <!--4、收银员管理-->
+        <div class="container-right fl">
+            <p class="container-title">收银员管理</p>
+            <!--收银员管理表格-->
+            <div class="agent-manage-infor clearfix m-agent-manage-infor">
+                <div class="agent-manage-title">
+                    <ul>
+                        <li>
+                            <a class="agent-manage-add" href="javascript:;">
+                                新增
+                                <img src="../image/new-add.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="agent-manage-delete" href="javascript:;">
+                                编辑
+                                <img src="../image/edit.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="agent-manage-edit" href="javascript:;">
+                                删除
+                                <img src="../image/delete-2.png" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="agent-manage-content clearfix">
+                    <li><input type="checkbox" name="" id="checkAll"/></li>
+                    <li class="list-first">序列</li>
+                    <li>姓名</li>
+                    <li>手机号码</li>
+                    <li>账单</li>
+                    <li>报表</li>
+                    <li>退款</li>
+                </ul>
+                <ul class="agent-manage-bottom clearfix">
+                    <li><input type="checkbox" name="check"/></li>
+                    <li>1</li>
+                    <li>张大大</li>
+                    <li>13544448888</li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="agent-manage-bottom clearfix">
+                    <li><input type="checkbox" name="check"/></li>
+                    <li>1</li>
+                    <li>张大大</li>
+                    <li>13544448888</li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="common-row">
+                            <div class="cell-right">
+                                <span class="switch-off"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--上下页面按钮-->
+            <div class="page">
+                <div class="page-button">
+                    <a href="javasript:;"><img src="../imgs/button-left.png" alt=""/></a>
+                    <a href="javasript:;"><img src="../imgs/button-right.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+        <!--5、开户待审-->
+        <div class="container-right fl">
+            <p class="container-title">开户待审</p>
+            <!--开户待审表格-->
+            <div class="agent-infor clearfix m-agent-infor">
+                <div class="agent-title">
+                    <ul>
+                        <li>
+                            <a class="agent-audit" href="javascript:;">
+                                审核
+                                <img src="../imgs/check.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="agent-delete" href="javascript:;">
+                                编辑
+                                <img src="../image/edit.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="agent-edit" href="javascript:;">
+                                详情
+                                <img src="../imgs/details-20170522.png" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="agent-content clearfix">
+                    <li>商户名称</li>
+                    <li>商户编号</li>
+                    <li>商户类型</li>
+                    <li>所属渠道</li>
+                    <li>操作</li>
+                </ul>
+                <ul class="agent-bottom clearfix" id="agent-items" >
+                    <li>佛山市泰芒了</li>
+                    <li>13544448888</li>
+                    <li>普通商户</li>
+                    <li>佛山市米又米信息科技有限公司</li>
+                    <li>
+                        <a class="pay-ad-delete" href="javascript:;">删除</a>
+                    </li>
+                </ul>
+            </div>
+            <!--上下页面按钮-->
+            <div class="page">
+                <div class="page-button">
+                    <a href="javasript:;"><img src="../imgs/button-left.png" alt=""/></a>
+                    <a href="javasript:;"><img src="../imgs/button-right.png" alt=""/></a>
+                </div>
+            </div>
+            <!--审核弹出框-->
+            <div class="audit-box">
+                <div class="audit-box-content">
+                    <a id="audit-close" href="javascript:;"><img src="../imgs/audit-close.png" alt=""/></a>
+                    <div class="audit-box-tip">
+                        <img src="../imgs/review-20170522.png" alt=""/>
+                        <span class="audit-box-text">审核通过</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--6、二维码批量导出-->
+        <div class="container-right fl">
+            <p class="container-title">二维码批量导出</p>
+            <!--交易时间与支付类型表格-->
+            <div class="daily-form">
+                <div class="daily-time">
+                    <span>交易时间</span>
+                    <p>
+                        <input type="text" class="sang_Calender" />
+                        <img src="../image/date.png" alt=""/>
+                    </p> -
+                    <p>
+                        <input type="text" class="sang_Calender" />
+                        <img src="../image/date.png" alt=""/>
+                    </p>
+                </div>
+                <div class="daily-type">
+                    <span>大商户</span>
+                    <p>
+                        <input type="text" placeholder="请输入大商户"/>
+                        <img class="daily-close" src="../image/colse-1.png" alt=""/>
+                        <img class="daily-search" src="../image/screen-search-1.png" alt=""/>
+                    </p>
+                    <span>商户名称</span>
+                    <p>
+                        <input type="text" placeholder="请输商户名称"/>
+                        <img class="daily-close" src="../image/colse-1.png" alt=""/>
+                        <img class="daily-search" src="../image/screen-search-1.png" alt=""/>
+                    </p>
+                    <span>商户编号</span>
+                    <p>
+                        <input type="text" placeholder="请选择商户编号"/>
+                        <img class="daily-close" src="../image/colse-1.png" alt=""/>
+                        <img class="daily-search" src="../image/screen-search-1.png" alt=""/>
+                    </p>
+
+                </div>
+                <div class="daily-btn">
+                    <span>商户类型</span>
+                    <select>
+                        <option value="">人民币</option>
+                        <option value="">美元</option>
+                        <option value="">欧元</option>
+                        <option value="">港币</option>
+                    </select>
+                    <span>导出状态</span>
+                    <select>
+                        <option value="">请选择状态</option>
+                        <option value="">已导出</option>
+                        <option value="">未导出</option>
+                        <option value="">导出中</option>
+                    </select>
+                    <a class="daily-check" href="javascript:;">查询</a>
+                    <a class="daily-export" href="javascript:;">二维码导出</a>
+                </div>
+                <!--二维码弹出框简约版-->
+                <div class="qrcode-pithy">
+                    <div class="qrcode-pithy-close">
+                        <a href="javascript:;">
+                            <img src="../imgs/qrcode-pithy-close.png" alt=""/>
+                        </a>
+                    </div>
+                    <h4>导出收款码</h4>
+                    <div class="qrcode-pithy-top">
+                        <span>二维码样式：</span>
+                        <input type="radio" name="form" checked="checked"/>简洁版
+                        <input type="radio" name="form"/>精修版
+                    </div>
+                    <p class="qrcode-size">
+                        <span>二维码尺寸：</span>
+                        <input type="text" placeholder="请输入二维码尺寸"/>
+                        <span>单位/毫米</span>
+                    </p>
+                    <p>示例图：只做效果显示，不做交易使用</p>
+                    <div class="qrcode-pithy-pic">
+                        <span></span>
+                        <p class="qrcode-pithy-btn">
+                            <a href="javascript:;">确认导出</a>
+                            <a href="javascript:;">关闭</a>
+                        </p>
+                    </div>
+
+                </div>
+                <!--二维码弹出框精修版-->
+                <div class="qrcode-truing">
+                    <div class="qrcode-pithy-close">
+                        <a href="javascript:;">
+                            <img src="../imgs/qrcode-pithy-close.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="clearfix">
+                        <div class="truing-left fl">
+                            <p class="truing-style">
+                                <span>二维码样式：</span>
+                                <input type="radio" name="form"/>简洁版
+                                <input type="radio" name="form" checked="checked"/>精修版
+                            </p>
+                            <p class="truing-style">
+                                <span>背景颜色：</span>
+                                <input type="radio" name="colour" checked="checked"/>绿色
+                                <input type="radio" name="colour"/>蓝色
+                                <input type="radio" name="colour"/>红色
+                                <input type="radio" name="colour"/>自定义
+                                <span class="style-choose-btn">选择</span>
+                            </p>
+                            <p class="truing-logo">
+                                <span>logo渠道：</span>
+                                <input type="file"/>
+                            </p>
+                            <p class="truing-tip">注：请上传24*24 jpg格式图版</p>
+                            <p class="truing-remark">
+                                <span>备注：</span>
+                                <textarea></textarea>
+                            </p>
+                        </div>
+                        <div class="truing-right fr">
+                            <p>示例图：只做效果显示，不做交易使用</p>
+                            <div class="truing-right-box">
+                                <p class="truing-right-pic">
+                                    <img src="../imgs/WeChat-pay.png" alt=""/>
+                                    <span>微信</span>
+                                    <img src="../imgs/alipay-pay.png" alt=""/>
+                                    <span>支付宝</span>
+                                </p>
+                                <h3>扫一扫付款</h3>
+                                <div class="truing-right-code">
+                                    <img src="../image/qr-code.png" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qrcode-truing-btn">
+                        <a href="javascript:;">确认导出</a>
+                        <a href="javascript:;">关闭</a>
+                    </div>
+
+                </div>
+            </div>
+            <!--底部表格-->
+            <div class="qrcode-table">
+                <ul class="qrcode-table-title">
+                    <li>商户名称</li>
+                    <li>商户编号</li>
+                    <li>父商号</li>
+                    <li>所属渠道</li>
+                    <li>创建时间</li>
+                    <li>状态</li>
+                    <li>导出时间</li>
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+                <ul class="qrcode-table-item">
+                    <li>佛山烤烤拉拉大米肉肉店</li>
+                    <li>13545643434</li>
+                    <li>父商号</li>
+                    <li>佛山米又米信息科技有限公司</li>
+                    <li>2017-05-22 22:22:22</li>
+                    <li>未导出</li>
+                    <li>导出时间</li>
+
+                </ul>
+            </div>
+            <!--上下页面按钮-->
+            <div class="page">
+                <div class="page-button">
+                    <a href="javasript:;"><img src="../imgs/button-left.png" alt=""/></a>
+                    <a href="javasript:;"><img src="../imgs/button-right.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+        <!--7、代理交易情况-->
+        <div class="container-right fl">
+            <div class="container-title agency-bottom">
+                <span>2017/4/13-2017/4/15</span>
+                <a href="javascript:;">添加对比</a>
+            </div>
+            <!--汇总数据查询表格-->
+            <div class="collect-data clearfix">
+                <ul class="basic-content clearfix">
+                    <li>所选时间段</li>
+                    <li>
+                        <span>成功交易额</span>
+                        <a class="bold" href="javascript:;">0.00</a>
+                    </li>
+                    <li>
+                        <span>发起订单</span>
+                        <a href="javascript:;">
+                            <span class="bold">0</span>笔
+                        </a>
+                    </li>
+                    <li>
+                        <span>成功订单</span>
+                        <a href="javascript:;">
+                            <span class="bold">0</span>笔
+                        </a>
+                    </li>
+                    <li>
+                        <span>订单转化率</span>
+                        <a href="javascript:;">-</a>
+                    </li>
+                    <li>
+                        <span>平价客单价</span>
+                        <a href="javascript:;">-</a>
+                    </li>
+                    <li class="basic-details">
+                        <p>查看</p>
+                        <p>详情</p>
+                    </li>
+                </ul>
+                <ul class="basic-bottom basic-bottom2 clearfix">
+                    <li>历史峰值</li>
+                    <li>0元</li>
+                    <li>0笔</li>
+                    <li>0笔</li>
+                    <li>0%</li>
+                    <li>-</li>
+                </ul>
+            </div>
+            <!--交易额表格-->
+            <div class="trade">
+                <p class="trade-title">
+                    <span></span>
+                    <span>交易额</span>
+                    <span>0元</span>
+                </p>
+                <canvas id="canvas" width="930" height="250"></canvas>
+            </div>
+            <!--发起订单表格-->
+            <div class="indent">
+                <p>
+                    <span></span>
+                    <span>发起订单</span>
+                    <span>0笔</span>
+                </p>
+                <P>
+                    <span></span>
+                    <span>成功订单</span>
+                    <span>0笔</span>
+                </P>
+                <canvas id="canvas2" width="930" height="250"></canvas>
+            </div>
+        </div>
+        <!--8、订单流水查询-->
+        <div class="container-right fl">
+            <p class="container-title hidden-xs">订单流水查询</p>
+            <!--筛选表格-->
+            <div class="screen clearfix">
+                <p class="screen-title">筛选</p>
+                <div class="screen-content">
+                    <form action="">
+                        <p>
+                            <span>交易信息</span>
+                            <input type="text" placeholder="输入微信支付订单号或者交易号查询订单"/>
+                        </p>
+                        <p>
+                            <span>支付状态</span>
+                            <select>
+                                <option>请选择</option>
+                                <option>已支付</option>
+                                <option>已退款</option>
+                                <option>未支付</option>
+                            </select>
+                        </p>
+                        <p class="screen-time">
+                            <span>时间范围</span>
+                            <input type="text" class="sang_Calender" /> -
+                            <input type="text" class="sang_Calender" />
+                        </p>
+                        <p class="screen-search">
+                            <a href="javascript:;">
+                                <img src="../image/screen-search-1.png" alt=""/>
+                                搜索
+                            </a>
+                            <a href="javascript:;">
+                                <img src="../image/screen-search-2.png" alt=""/>
+                                导出数据
+                            </a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <!--交易统计表格-->
+            <div class="deal">
+                <p class="deal-title">交易统计</p>
+                <ul>
+                    <li>
+                        <p>总交易额</p>
+                        <a href="javascript:;">0</a>
+                    </li>
+                    <li>
+                        <p>今日总额</p>
+                        <a href="javascript:;">0</a>
+                    </li>
+                    <li>
+                        <p>支付成功</p>
+                        <a href="javascript:;">0</a>
+                    </li>
+                    <li>
+                        <p>退款成功</p>
+                        <a href="javascript:;">0</a>
+                    </li>
+                </ul>
+            </div>
+            <!--ID表格-->
+            <div class="id-table">
+                <ul class="id-table-title">
+                    <li>ID</li>
+                    <li>商户号</li>
+                    <li>交易号</li>
+                    <li>交易金额</li>
+                    <li>交易类型</li>
+                    <li>交易状态</li>
+                    <li>创建时间</li>
+                </ul>
+                <ul class="id-table-content">
+                    <li>123</li>
+                    <li>hvubagb</li>
+                    <li>201236hbagns3243543443453454544</li>
+                    <li>¥ 100.00</li>
+                    <li>人民币</li>
+                    <li>进行中</li>
+                    <li>20170522</li>
+                </ul>
+            </div>
+            <!--上下页面按钮-->
+            <div class="page">
+                <div class="page-button">
+                    <a href="javasript:;"><img src="../imgs/button-left.png" alt=""/></a>
+                    <a href="javasript:;"><img src="../imgs/button-right.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+        <!--9、代理结算分成-->
+        <div class="container-right fl">
+            <p class="container-title">代理结算分成</p>
+            <!--代理结算分成表格-->
+            <div class="clearing-table">
+                <ul class="id-table-title">
+                    <li>交易时间</li>
+                    <li>商户名称</li>
+                    <li>交易金额</li>
+                    <li>商户费率(‰)</li>
+                    <li>手续费金额</li>
+                    <li>划账金额</li>
+                </ul>
+                <ul class="id-table-content">
+                    <li>20170522</li>
+                    <li>hvubagb</li>
+                    <li>201236hbagnsyfuvjsbdv;anvlavavba</li>
+                    <li>¥ 100.00</li>
+                    <li>人民币</li>
+                    <li>222.22</li>
+                </ul>
+            </div>
+            <!--上下页面按钮-->
+            <div class="page">
+                <div class="page-button">
+                    <a href="javasript:;"><img src="../imgs/button-left.png" alt=""/></a>
+                    <a href="javasript:;"><img src="../imgs/button-right.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+        <!--10、交易分润-->
+        <div class="container-right fl">
+            <p class="container-title">交易分润</p>
+            <!--交易分润表格-->
+            <div class="clearing-table">
+                <ul class="id-table-title">
+                    <li>交易时间</li>
+                    <li>商户名称</li>
+                    <li>交易金额</li>
+                    <li>商户费率(‰)</li>
+                    <li>手续费金额</li>
+                    <li>划账金额</li>
+                </ul>
+                <ul class="id-table-content">
+                    <li>20170522</li>
+                    <li>hvubagb</li>
+                    <li>201236hbagnshdahfabfa;bfabhaf</li>
+                    <li>¥ 100.00</li>
+                    <li>人民币</li>
+                    <li>222.22</li>
+                </ul>
+            </div>
+            <!--上下页面按钮-->
+            <div class="page">
+                <div class="page-button">
+                    <a href="javasript:;"><img src="../imgs/button-left.png" alt=""/></a>
+                    <a href="javasript:;"><img src="../imgs/button-right.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+        <!--11、支付广告-->
+        <div class="container-right fl">
+            <p class="container-title">支付广告</p>
+            <!--收银员管理表格-->
+            <div class="agent-infor clearfix m-agent-infor">
+                <div class="agent-title">
+                    <ul>
+                        <li>
+                            <a class="agent-add pay-ad-btn" href="javascript:;">
+                                新增
+                                <img src="../image/new-add.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="agent-delete" href="javascript:;">
+                                编辑
+                                <img src="../image/edit.png" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="agent-content clearfix">
+                    <li>广告ID</li>
+                    <li>广告文案简介</li>
+                    <li>广告链接</li>
+                    <li>广告图片</li>
+                    <li>操作</li>
+                </ul>
+                <ul class="pay-ad-bottom clearfix">
+                    <li>13455</li>
+                    <li>最最最牛B的牛肉丸,潮汕沙茶酱潮汕沙茶酱</li>
+                    <li style="font-size: 12px"><a href="http://echarts.baidu.com/examples.html#chart-type-bar">http://echarts.baidu.com/examples.htmlhttp://echarts.baidu.com/examples.html</a></li>
+                    <li class="pay-ad-img">
+                        <a href="javascript:;">
+                            <img src="../imgs/ad.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="pay-ad-delete" href="javascript:;">删除</a>
+                    </li>
+                </ul>
+            </div>
+            <!--上下页面按钮-->
+            <div class="page">
+                <div class="page-button">
+                    <a href="javasript:;"><img src="../imgs/button-left.png" alt=""/></a>
+                    <a href="javasript:;"><img src="../imgs/button-right.png" alt=""/></a>
+                </div>
+            </div>
+            <!--添加广告页面-->
+            <div class="new-ad-box">
+                <div class="new-ad-content">
+                    <div class="new-ad-close">
+                        <a class="new-ad-closebox" href="javascript:;">
+                            <img src="../imgs/audit-close.png" alt=""/>
+                        </a>
+                    </div>
+                    <form action="#" class="new-ad-bottom">
+                        <div class="ad-intro">
+                            <span>广告文案简介</span>
+                            <input type="text" placeholder="请输入文案简介"/>
+                        </div>
+                        <div class="ad-url">
+                            <span >广告链接</span>
+                            <input type="text" placeholder="请输入广告连接" style="margin-left: 14px"/>
+                        </div>
+                        <div class="new-ad-img">
+                            <span>广告图片</span>
+                            <input type="text" placeholder="请上传900*400px图片" disabled="disabled" style="margin-left: 14px">
+                            <div class="file">
+                                上传
+                                <input type="file" name="file" multiple onchange="imgPreview(this)" class="shangchuan"/>
+                            </div>
+                        </div>
+                        <img id="preview"/>
+                        <input id="ad-submit" type="submit" value="添加广告"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--公共遮罩层-->
+    <div class="background"></div>
+</div>
+</body>
+<script src="../script/jquery.js"></script>
+<script src="../script/index.js"></script>
+<script src="../script/datetime.js"></script>
+<script>
+    $(function(){
+        // 一、左边tab栏的切换
+        $(".navbar ul li").each(function(index,item){
+            $(item).attr("index-li",index);
+        }).click(function (){
+            console.log($(this));
+            $(".navbar ul li").removeClass("active");
+            $(this).addClass("active");
+            // 让与li对应索引 的那个div显示出来
+            var index = $(this).attr("index-li");
+            console.log(index)
+            // 先让所有的都移除类样式
+            $(".sp-container .container-right").eq(index).addClass("selected").siblings().removeClass("selected");
+        })
+
+        // 3、商户管理页面 点击新增加弹出编辑页面
+        var agentAdd = $(".agent-add")
+        var basicClose = $(".basic-data-close")
+        var background = $(".background")
+        var basicData = $(".basic-data")
+            agentAdd.click(function(){
+                basicData.css("display","block");
+                background.css("display", "block");
+            })
+//        点击确定关闭
+            basicClose.click(function(){
+                basicData.css("display","none");
+                background.css("display", "none");
+            })
+
+        //  5、开户待审页面点击更新按钮弹出验证框
+        var agentItems = $("#agent-items")
+        var auditClose = $("#audit-close")
+        var auditBox = $(".audit-box")
+            agentItems.click(function(){
+                auditBox.css("display","block");
+                background.css("display", "block");
+            })
+//        点击确定关闭验证框
+            auditClose.click(function(){
+                auditBox.css("display","none");
+                background.css("display", "none");
+            })
+
+
+        //    6、二维码批量导出  点击二维码导出按钮弹出二维码样式
+        var dailyExport = $(".daily-export")
+        var pithyClose = $(".qrcode-pithy-close")
+        var qrcodePithy = $(".qrcode-pithy")
+            dailyExport.click(function(){
+                qrcodePithy.css("display","block");
+                background.css("display", "block");
+            })
+            //        点击确定关闭验证框
+            pithyClose.click(function(){
+                qrcodePithy.css("display","none");
+                background.css("display", "none");
+            })
+
+
+        //    11、支付广告页面  点击更新按钮弹出验证框
+        var agentAdd = $(".pay-ad-btn")
+        var newadClose = $(".new-ad-closebox")
+        var newadBox = $(".new-ad-box")
+            agentAdd.click(function(){
+                newadBox.css("display","block");
+                background.css("display", "block");
+            })
+            //        点击确定关闭验证框
+            newadClose.click(function(){
+                newadBox.css("display","none");
+                background.css("display", "none");
+            })
+
+//    上传图片并预览
+        function imgPreview(fileDom){
+            //判断是否支持FileReader
+            if (window.FileReader) {
+                var reader = new FileReader();
+            } else {
+                alert("您的设备不支持图片预览功能，如需该功能请升级您的设备！");
+            }
+
+            //获取文件
+            var file = fileDom.files[0];
+            var imageType = /^image\//;
+            //是否是图片
+            if (!imageType.test(file.type)) {
+                alert("请选择图片！");
+                return;
+            }
+            //读取完成
+            reader.onload = function(e) {
+                //获取图片dom
+                var img = document.getElementById("preview");
+                //图片路径设置为读取的图片
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+    })
+</script>
+</html>
